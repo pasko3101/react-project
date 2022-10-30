@@ -1,11 +1,11 @@
-import { Nav } from "./Nav";
+import Img from "./Img";
+import Container from "./Cnotainer";
 function Header() {
   return (
     <header className="header">
-      <a href="#">Logo</a>
-      <Nav></Nav>
+      <Img></Img>
+      <Container></Container>
     </header>
   );
 }
-
 export default Header;

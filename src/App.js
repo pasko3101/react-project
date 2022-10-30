@@ -1,13 +1,15 @@
 import "./App.scss";
 import Header from "./component/Header";
+import Main from "./component/Main";
+import Footer from "./component/Footer";
 
 function App() {
   return (
     <>
       <Header></Header>
-      <h1>Hello world!</h1>
+      <Main></Main>
+      <Footer></Footer>
     </>
   );
 }
-
 export default App;
