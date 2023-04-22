@@ -1,9 +1,10 @@
-import Regular from * {
+* {
   margin: 0;
   padding: 0;
   font-size: 0;
   box-sizing: border-box;
   color: rgb(127, 104, 89);
+  font-family: "Garamond";
 }
 @font-face {
   font-family: "Garamond";
@@ -17,118 +18,7 @@ import Regular from * {
 body {
   background-image: url(./picture/bg_img.webp);
 }
-.header {
-  width: calc(100% - 30px);
-  display: flex;
-  margin: 10px auto;
-  &__img {
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-    width: 30%;
-    padding: 10px;
-    border: 2px solid rgb(127, 104, 89);
-    overflow: hidden;
-  }
-  &__foto {
-    width: 250px;
-    @media screen and (min-width: 940px) {
-      width: 100%;
-    }
-  }
-  &__container {
-    width: 70%;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &__title {
-    width: calc(100% - 20px);
-    margin: 0 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    @media screen and (min-width: 680px) {
-      width: calc(80% - 20px);
-    }
-    &_name {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      text-align: right;
-    }
-    &_contact {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 5px auto;
-      @media screen and (min-width: 500px) {
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 0;
-      }
-    }
-  }
-  &__name {
-    font-weight: 700;
-    font-size: 42px;
-    text-transform: uppercase;
-  }
-  &__jobtitle {
-    font-size: 24px;
-  }
-  &__location {
-    font-size: 18px;
-  }
-  &__qrcode {
-    width: 100%;
-    display: none;
-    @media screen and (min-width: 680px) {
-      display: block;
-    }
 
-    &_img {
-      width: 0;
-      @media screen and (min-width: 680px) {
-        width: 20%;
-      }
-    }
-  }
-  &__profile {
-    width: calc(100% - 20px);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-  }
-  &__birth {
-    width: 100%;
-    display: flex;
-    margin-bottom: 5px;
-    @media screen and (min-width: 680px) {
-      width: 80%;
-    }
-  }
-  &__text {
-    font-size: 16px;
-    white-space: nowrap;
-  }
-  &__date {
-    font-size: 16px;
-  }
-}
-.points {
-  flex-grow: 1;
-  margin: 0 5px;
-  position: relative;
-  &::before {
-    position: absolute;
-    top: 12px;
-    left: 0px;
-    content: "";
-    display: block;
-    width: 100%;
-    border-top: 2px dotted rgb(127, 104, 89);
-  }
-}
 .bg__color {
   width: 100%;
   background: rgba(127, 104, 89, 0.3);
@@ -158,12 +48,28 @@ body {
   display: flex;
   justify-content: space-evenly;
   margin: 5px 0;
+  &__before {
+    position: relative;
+    &::before {
+      position: absolute;
+      top: 3px;
+      left: -20px;
+      content: "";
+      display: block;
+      width: 3px;
+      height: 3px;
+      border: 4px dotted rgb(127, 104, 89);
+      transform: rotate(45deg);
+    }
+  }
 }
+
 .profile__text {
   font-size: 16px;
   text-indent: 20px;
 }
 main {
+  max-width: 1110px;
   width: calc(100% - 30px);
   margin: 0 auto;
 }
@@ -204,40 +110,14 @@ main {
     font-size: 16px;
     text-indent: 20px;
   }
-}
-.list__before {
-  position: relative;
-  &::before {
-    position: absolute;
-    top: 3px;
-    left: -20px;
-    content: "";
-    display: block;
-    width: 3px;
-    height: 3px;
-    border: 4px dotted rgb(127, 104, 89);
-    transform: rotate(45deg);
-  }
-}
-.point__before {
-  margin-left: 30px;
-  text-indent: 0;
-  position: relative;
-  &::before {
-    position: absolute;
-    top: 3px;
-    left: -20px;
-    content: "";
-    display: block;
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: rgba(127, 104, 89, 0.8);
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 }
 .degree__location {
   display: flex;
-
   justify-content: space-between;
 }
 .education {
@@ -247,6 +127,10 @@ main {
   }
   &__location {
     font-size: 16px;
+    &_top {
+      position: relative;
+      bottom: 9px;
+    }
   }
 }
 .skills {
@@ -291,35 +175,8 @@ main {
     }
   }
 }
-footer {
-  width: calc(100% - 30px);
-  margin: 40px auto 20px;
-}
-.footer {
-  display: flex;
-  align-items: flex-end;
-  &__name {
-    text-align: right;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-right: 15px;
-    flex-grow: 1;
-  }
-  &_phone {
-    margin-top: 15px;
-  }
-}
-.social {
-  display: flex;
-  flex-direction: column;
-  @media screen and (min-width: 768px) {
-    flex-direction: row;
-  }
-  &__telegram {
-    margin-right: 10px;
-  }
-  &__linkedin {
-    margin-right: 10px;
-  }
-}
+
+
+@import "./scss/header.scss";
+@import "./scss/points.scss";
+@import "./scss/footer.scss";

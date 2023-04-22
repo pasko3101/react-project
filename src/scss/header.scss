@@ -1,0 +1,99 @@
+.header {
+  max-width: 1110px;
+  width: calc(100% - 30px);
+  display: flex;
+  margin: 10px auto;
+  &__img {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    width: 30%;
+    padding: 10px;
+    border: 2px solid rgb(127, 104, 89);
+    overflow: hidden;
+  }
+  &__foto {
+    width: 250px;
+    @media screen and (min-width: 940px) {
+      width: 100%;
+    }
+  }
+  &__container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__title {
+    width: calc(100% - 20px);
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @media screen and (min-width: 680px) {
+      width: calc(80% - 20px);
+    }
+    &_name {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      text-align: right;
+    }
+    &_contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 5px auto;
+      @media screen and (min-width: 500px) {
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+      }
+    }
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 42px;
+    text-transform: uppercase;
+  }
+  &__jobtitle {
+    font-size: 24px;
+  }
+  &__location {
+    font-size: 18px;
+  }
+  &__qrcode {
+    width: 100%;
+    display: none;
+    @media screen and (min-width: 680px) {
+      display: block;
+    }
+
+    &_img {
+      width: 0;
+      @media screen and (min-width: 680px) {
+        width: 20%;
+      }
+    }
+  }
+  &__profile {
+    width: calc(100% - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  &__birth {
+    width: 100%;
+    display: flex;
+    margin-bottom: 5px;
+    @media screen and (min-width: 680px) {
+      width: 80%;
+    }
+  }
+  &__text {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+  &__date {
+    font-size: 16px;
+  }
+}

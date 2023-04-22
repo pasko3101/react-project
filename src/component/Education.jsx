@@ -13,7 +13,7 @@ function Education() {
       </div>
       <div className="degree__location">
         <span className="education__degree">Civil Engineer</span>
-        <span className="education__location">Kiev</span>
+        <span className="education__location education__location_top">Kiev</span>
       </div>
       <div className="title__jobtitle display">
         <p className="jobtitle__text display__title list__before jobtitle__text_margin">
@@ -24,7 +24,7 @@ function Education() {
       </div>
       <div className="degree__location">
         <span className="education__degree">Construction Technical</span>
-        <span className="education__location">Kiev</span>
+        <span className="education__location education__location_top">Kiev</span>
       </div>
     </>
   );

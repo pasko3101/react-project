@@ -9,7 +9,7 @@ function Employment() {
           Student Front End, Hillel IT School
         </p>
         <div className="points display__none"></div>
-        <p className="jobtitle__date">Apr 2022 — Present (online)</p>
+        <p className="jobtitle__date">Apr 2022 — Jan 2023 (online)</p>
       </div>
       <div className="jobtitle__description">
         <p className="jobtitle__description">
@@ -26,7 +26,7 @@ function Employment() {
           Technical supervision engineer, Individual entrepreneur
         </p>
         <div className="points display__none"></div>
-        <p className="jobtitle__date">Feb 2017 — Present (Poltava)</p>
+        <p className="jobtitle__date">Feb 2017 — Aug 2022 (Poltava)</p>
       </div>
       <div className="jobtitle__description">
         <p className="jobtitle__description point__before">

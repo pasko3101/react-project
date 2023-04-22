@@ -1,10 +1,11 @@
 // import Social from "./Social";
+import Social from "./Social";
 import Name from "./Name";
 import Qrcode from "./Qrcode";
 function Footer() {
   return (
     <footer className="footer">
-      {/* <Social></Social> */}
+      <Social></Social>
       <Name></Name>
       <Qrcode></Qrcode>
     </footer>

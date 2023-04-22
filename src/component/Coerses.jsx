@@ -9,11 +9,11 @@ function Coerses() {
           Front End PRO
         </p>
         <div className="points"></div>
-        <p className="jobtitle__date">Jul 2022 — Present</p>
+        <p className="jobtitle__date">Jul 2022 — Jan 2023</p>
       </div>
       <div className="degree__location">
         <span className="education__degree">Hillel IT School</span>
-        <span className="education__location">online</span>
+        <span className="education__location education__location_top">online</span>
       </div>
       <div className="title__jobtitle">
         <p className="jobtitle__text list__before jobtitle__text_margin">
@@ -24,7 +24,7 @@ function Coerses() {
       </div>
       <div className="degree__location">
         <span className="education__degree">Hillel IT School</span>
-        <span className="education__location">online</span>
+        <span className="education__location education__location_top">online</span>
       </div>
     </>
   );
